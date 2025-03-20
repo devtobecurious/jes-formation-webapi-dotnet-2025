@@ -8,9 +8,19 @@
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>$(DefineConstants);TEST</DefineConstants>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.3" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DTBC.Ludotek.Core.VideoGames.Application\DTBC.Ludotek.Core.VideoGames.Application.csproj" />
+    <ProjectReference Include="..\DTBC.Ludotek.Core.VideoGames.Infrastructure.InMemory\DTBC.Ludotek.Core.VideoGames.Infrastructure.InMemory.csproj" />
+    <ProjectReference Include="..\DTBC.Ludotek.Core.VideoGames.Models\DTBC.Ludotek.Core.VideoGames.Models.csproj" />
   </ItemGroup>
 
 </Project>

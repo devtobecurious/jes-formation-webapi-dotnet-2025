@@ -1,10 +1,12 @@
+using DTBC.Ludotek.Core.VideoGames.Application;
+using DTBC.Ludotek.Core.VideoGames.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DTBC.Ludotek.Web.Api.UI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class WeatherForecastController: ControllerBase
     {
         private static readonly string[] Summaries = new[]
         {
@@ -13,9 +15,10 @@ namespace DTBC.Ludotek.Web.Api.UI.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(PopCorn popCorn, VideoGamesMachine machine, ILogger<WeatherForecastController> logger)
         {
             _logger = logger;
+            popCorn.Manger();
         }
 
         [HttpGet(Name = "GetWeatherForecast")]

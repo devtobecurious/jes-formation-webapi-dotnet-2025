@@ -16,18 +16,18 @@ namespace DTBC.Ludotek.Core.VideoGames.Models
 		public int Year { get; init; }
 
 		//private string description = string.Empty;
-		public string Description 
+		public string Description
 		{
 			get; // => description;
-			set 
+			set
 			{
-				if(string.IsNullOrEmpty(value))
+				if (string.IsNullOrEmpty(value))
 				{
 					throw new ArgumentException("Description cannot be null or empty");
 				}
 				field = value;
-			} 
-				
+			}
+		}
 		#endregion
 	}
 }
