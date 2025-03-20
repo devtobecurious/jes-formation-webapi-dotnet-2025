@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Libs/" />
+  <Folder Name="/Libs/VideoGames/">
+    <Project Path="DTBC.Ludotek.Core.VideoGames.Models/DTBC.Ludotek.Core.VideoGames.Models.csproj" />
+  </Folder>
+  <Folder Name="/UIs/">
+    <Project Path="DTBC.Ludotek.Web.Api.UI/DTBC.Ludotek.Web.Api.UI.csproj" />
+  </Folder>
+</Solution>
