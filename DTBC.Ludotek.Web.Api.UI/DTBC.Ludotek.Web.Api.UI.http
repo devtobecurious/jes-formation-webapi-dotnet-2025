@@ -1,0 +1,6 @@
+@DTBC.Ludotek.Web.Api.UI_HostAddress = http://localhost:5089
+
+GET {{DTBC.Ludotek.Web.Api.UI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
