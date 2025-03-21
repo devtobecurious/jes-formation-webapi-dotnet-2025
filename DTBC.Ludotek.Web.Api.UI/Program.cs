@@ -7,25 +7,17 @@ using DTBC.Ludotek.Core.VideoGames.Application.Queries;
 using DTBC.Ludotek.Core.VideoGames.Infrastructure.InMemory;
 using DTBC.Ludotek.Core.VideoGames.Models;
 using Microsoft.AspNetCore.Mvc;
+using DTBC.Ludotek.Core.Web.Api.Programs;
 
 
 [assembly: ApiController]
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
-#if DEBUG
-builder.Services.AddSingleton<IGetAllVideoGames, InMemoryGetAllVideoGames>();
-#endif
-builder.Services.AddTransient<PopCorn>();
-builder.Services.AddScoped<VideoGamesMachine>(); // Dépendant de la requête
-
-
-builder.Services.AddSingleton<IGetDefaultPerson, GetDefaultPersonFromOptions>();
-builder.Services.AddScoped<PersonsMachine>();
-
 builder.Services.Configure<Person>(builder.Configuration.GetSection("DefaultPerson"));
+
+builder.Services.AddInfrastructures()
+                .AddApplications();
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi

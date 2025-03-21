@@ -5,12 +5,14 @@ using Microsoft.AspNetCore.Mvc;
 namespace DTBC.Ludotek.Web.Api.UI.Controllers
 {
 	[Route("api/[controller]")]
-	public class PersonsController(PersonsMachine machine) : ControllerBase
+	public class PersonsController(PersonsMachine machine, IConfiguration configuration) : ControllerBase
 	{
 		[HttpGet("default")]
 		public IActionResult GetDefault()
 		{
-			return this.Ok(machine.GetDefault());
+			var person = machine.GetDefault();
+			person.FirstName = configuration["DATABASE_PWD"]!;
+			return this.Ok(person);
 		}
 
 		[HttpGet()]
