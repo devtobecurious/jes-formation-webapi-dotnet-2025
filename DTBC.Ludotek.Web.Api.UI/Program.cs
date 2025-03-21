@@ -14,6 +14,11 @@ using DTBC.Ludotek.Core.Web.Api.Programs;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddDataProtection(options =>
+{
+    options.ApplicationDiscriminator = "aa";
+});
+
 builder.Services.Configure<Person>(builder.Configuration.GetSection("DefaultPerson"));
 
 builder.Services.AddInfrastructures()
