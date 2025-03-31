@@ -29,12 +29,14 @@ namespace DTBC.Ludotek.Pipelines
 			this._items.CopyTo(array, arrayIndex);
 		}
 
-		public void Execute()
+		public Task Execute()
 		{
-			this._items.ForEach(item =>
-			{
-				item.Execute();
-			});
+			// on attend en async chaque fin de tache :
+			// this._items.ForEach(async item => await item.Execute());
+			//this._items.ForEach(item => item.Execute());
+			var tasks = this._items.Select(item => item.Execute());
+
+			return Task.WhenAll(tasks);
 		}
 
 		public IEnumerator<ICommand<Titem>> GetEnumerator() => this._items.GetEnumerator();

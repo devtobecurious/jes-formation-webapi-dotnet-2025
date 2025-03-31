@@ -8,6 +8,6 @@ namespace DTBC.Ludotek.Pipelines
 {
 	public interface ICommand<T> where T : class, IItem
 	{
-		void Execute();
+		Task Execute();
 	}
 }

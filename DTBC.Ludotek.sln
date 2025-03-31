@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35913.81 d17.13
+VisualStudioVersion = 17.13.35913.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTBC.Ludotek.Web.Api.UI", "DTBC.Ludotek.Web.Api.UI\DTBC.Ludotek.Web.Api.UI.csproj", "{1D208359-4440-4A0B-97C8-5717357CF123}"
 EndProject
@@ -38,6 +38,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheDelegates", "TheDelegates\TheDelegates.csproj", "{9AEBC8FC-8145-4BC1-9F66-746147514E52}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTBC.Ludotek.Pipelines", "DTBC.Ludotek.Pipelines\DTBC.Ludotek.Pipelines.csproj", "{970F62FC-8754-4ABF-BB3A-32F02817D2D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscoverTasks", "DiscoverTasks4\DiscoverTasks.csproj", "{BDAA860C-D95D-46F9-A8D0-F3D4FB6ECDD4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{970F62FC-8754-4ABF-BB3A-32F02817D2D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{970F62FC-8754-4ABF-BB3A-32F02817D2D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{970F62FC-8754-4ABF-BB3A-32F02817D2D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDAA860C-D95D-46F9-A8D0-F3D4FB6ECDD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDAA860C-D95D-46F9-A8D0-F3D4FB6ECDD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDAA860C-D95D-46F9-A8D0-F3D4FB6ECDD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDAA860C-D95D-46F9-A8D0-F3D4FB6ECDD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -113,6 +119,7 @@ Global
 		{8CCCBC48-75ED-4769-BC80-C110B80A93E0} = {B2750ADC-AC7E-47E2-B7CC-FBC202E4A433}
 		{9AEBC8FC-8145-4BC1-9F66-746147514E52} = {DB85B196-22D8-483C-8F69-531AA03E7E6C}
 		{970F62FC-8754-4ABF-BB3A-32F02817D2D5} = {B2750ADC-AC7E-47E2-B7CC-FBC202E4A433}
+		{BDAA860C-D95D-46F9-A8D0-F3D4FB6ECDD4} = {DB85B196-22D8-483C-8F69-531AA03E7E6C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D44F7794-A86F-4633-B1BD-67777A4FE52E}

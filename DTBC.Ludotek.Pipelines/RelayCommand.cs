@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace DTBC.Ludotek.Pipelines
 {
-	public delegate void ActionToExecute<T>(T sender, EventArgs e) where T: class, IItem;	
+	public delegate Task? ActionToExecute<T>(T sender, EventArgs e) where T: class, IItem;	
 
 	public class RelayCommand<T>(T item, ActionToExecute<T> execute) : ICommand<T> where T : class, IItem
 	{
-		public void Execute()
+		public Task? Execute()
 		{
-			execute?.Invoke(item, EventArgs.Empty);
+			return execute?.Invoke(item, EventArgs.Empty);
 		}
 	}
 }

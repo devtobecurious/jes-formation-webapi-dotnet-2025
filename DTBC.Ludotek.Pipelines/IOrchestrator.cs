@@ -12,7 +12,7 @@ namespace DTBC.Ludotek.Pipelines
 		/// <summary>
 		/// 
 		/// </summary>
-		void Execute();
+		Task Execute();
 	}
 
 	/// <summary>
