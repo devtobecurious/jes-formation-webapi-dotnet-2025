@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DTBC.Ludotek.Core.VideoGames.Models\DTBC.Ludotek.Core.VideoGames.Models.csproj" />
+    <ProjectReference Include="..\DTBC.Ludotek.Pipelines\DTBC.Ludotek.Pipelines.csproj" />
   </ItemGroup>
 
 </Project>

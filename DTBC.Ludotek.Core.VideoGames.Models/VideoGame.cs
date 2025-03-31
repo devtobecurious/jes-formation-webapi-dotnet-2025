@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DTBC.Ludotek.Pipelines;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DTBC.Ludotek.Core.VideoGames.Models
 {
-	public class VideoGame
+	public class VideoGame : IItem
 	{
 		#region Properties
 		public int Id { get; set; }
