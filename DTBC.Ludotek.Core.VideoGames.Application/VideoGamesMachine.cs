@@ -40,7 +40,9 @@ namespace DTBC.Ludotek.Core.VideoGames.Application
 		{
 			this.pipeline.Clear();
 			this.pipeline.Add(new NodeVideoGameActions(new PrepareVideoGame(videoGame),
-														 new AddVideoGameCommand(videoGame)));
+													   new AddVideoGameCommand(videoGame),
+													   new RelayCommand<VideoGame>(videoGame, (item, args) => Console.WriteLine("vu !"))
+														));
 			this.pipeline.Execute();
 		}
 		#endregion
