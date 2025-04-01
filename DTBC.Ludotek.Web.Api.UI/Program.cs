@@ -21,7 +21,7 @@ builder.Services.AddDataProtection(options =>
 
 builder.Services.Configure<Person>(builder.Configuration.GetSection("DefaultPerson"));
 
-builder.Services.AddInfrastructures()
+builder.Services.AddInfrastructures(builder.Configuration)
                 .AddApplications();
 
 builder.Services.AddControllers();

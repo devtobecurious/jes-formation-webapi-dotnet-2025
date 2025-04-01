@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.3" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.3" />
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="9.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -15,6 +17,11 @@
     <ProjectReference Include="..\DTBC.Ludotek.Core.Persons.Infrastructure\DTBC.Ludotek.Core.Persons.Infrastructure.csproj" />
     <ProjectReference Include="..\DTBC.Ludotek.Core.VideoGames.Application\DTBC.Ludotek.Core.VideoGames.Application.csproj" />
     <ProjectReference Include="..\DTBC.Ludotek.Core.VideoGames.Infrastructure.InMemory\DTBC.Ludotek.Core.VideoGames.Infrastructure.InMemory.csproj" />
+    <ProjectReference Include="..\DTBC.Ludotek.Core.VideoGames.Infrastructure\DTBC.Ludotek.Core.VideoGames.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include=" Microsoft.EntityFrameworkCore" />
   </ItemGroup>
 
 </Project>
