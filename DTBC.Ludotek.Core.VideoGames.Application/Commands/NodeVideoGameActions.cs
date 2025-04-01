@@ -10,9 +10,11 @@ namespace DTBC.Ludotek.Core.VideoGames.Application.Commands
 {
 	internal class NodeVideoGameActions(params List<ICommand<VideoGame>> commands) : ICommand<VideoGame>
 	{
-		public void Execute()
+		public Task Execute()
 		{
 			commands.ForEach(cmd => cmd.Execute());
+
+			return Task.FromResult(0);
 		}
 	}
 }

@@ -10,9 +10,11 @@ namespace DTBC.Ludotek.Core.VideoGames.Application.Commands
 {
 	public class AddVideoGameCommand(VideoGame item) : ICommand<VideoGame>
 	{
-		public void Execute()
+		public Task Execute()
 		{
 			Console.WriteLine("Ah que c'est enregistré");
+
+			return Task.FromResult(1);
 		}
 	}
 }

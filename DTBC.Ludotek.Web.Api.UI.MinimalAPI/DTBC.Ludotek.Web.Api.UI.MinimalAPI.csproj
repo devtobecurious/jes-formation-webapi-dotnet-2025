@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DTBC.Ludotek.Core.VideoGames.Application\DTBC.Ludotek.Core.VideoGames.Application.csproj" />
+    <ProjectReference Include="..\DTBC.Ludotek.Core.VideoGames.Infrastructure.InMemory\DTBC.Ludotek.Core.VideoGames.Infrastructure.InMemory.csproj" />
+    <ProjectReference Include="..\DTBC.Ludotek.Core.VideoGames.Infrastructure\DTBC.Ludotek.Core.VideoGames.Infrastructure.csproj" />
+    <ProjectReference Include="..\DTBC.Ludotek.Core.VideoGames.Models\DTBC.Ludotek.Core.VideoGames.Models.csproj" />
+  </ItemGroup>
+
+</Project>

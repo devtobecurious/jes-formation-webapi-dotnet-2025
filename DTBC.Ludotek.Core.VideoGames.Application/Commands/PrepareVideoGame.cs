@@ -10,11 +10,13 @@ namespace DTBC.Ludotek.Core.VideoGames.Application.Commands
 {
 	internal class PrepareVideoGame(VideoGame item) : ICommand<VideoGame>
 	{
-		public void Execute()
+		public Task Execute()
 		{
 			item.Description = "Je suis prêt";
 
 			Console.WriteLine($"Je prépare : {item.Id}");
+
+			return Task.FromResult(0);
 		}
 	}
 }

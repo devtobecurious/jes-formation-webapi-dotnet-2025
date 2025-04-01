@@ -41,6 +41,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTBC.Ludotek.Pipelines", "D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscoverTasks", "DiscoverTasks4\DiscoverTasks.csproj", "{BDAA860C-D95D-46F9-A8D0-F3D4FB6ECDD4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTBC.Ludotek.Core.VideoGames.Infrastructure", "DTBC.Ludotek.Core.VideoGames.Infrastructure\DTBC.Ludotek.Core.VideoGames.Infrastructure.csproj", "{672A26ED-6055-4453-83BD-7396412AB6CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTBC.Ludotek.Web.Api.UI.MinimalAPI", "DTBC.Ludotek.Web.Api.UI.MinimalAPI\DTBC.Ludotek.Web.Api.UI.MinimalAPI.csproj", "{399BA23C-CD2D-4939-8B11-3ADB87E24016}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +103,14 @@ Global
 		{BDAA860C-D95D-46F9-A8D0-F3D4FB6ECDD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDAA860C-D95D-46F9-A8D0-F3D4FB6ECDD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDAA860C-D95D-46F9-A8D0-F3D4FB6ECDD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{672A26ED-6055-4453-83BD-7396412AB6CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{672A26ED-6055-4453-83BD-7396412AB6CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{672A26ED-6055-4453-83BD-7396412AB6CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{672A26ED-6055-4453-83BD-7396412AB6CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{399BA23C-CD2D-4939-8B11-3ADB87E24016}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{399BA23C-CD2D-4939-8B11-3ADB87E24016}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{399BA23C-CD2D-4939-8B11-3ADB87E24016}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{399BA23C-CD2D-4939-8B11-3ADB87E24016}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -120,6 +132,8 @@ Global
 		{9AEBC8FC-8145-4BC1-9F66-746147514E52} = {DB85B196-22D8-483C-8F69-531AA03E7E6C}
 		{970F62FC-8754-4ABF-BB3A-32F02817D2D5} = {B2750ADC-AC7E-47E2-B7CC-FBC202E4A433}
 		{BDAA860C-D95D-46F9-A8D0-F3D4FB6ECDD4} = {DB85B196-22D8-483C-8F69-531AA03E7E6C}
+		{672A26ED-6055-4453-83BD-7396412AB6CB} = {235DF9A3-26FA-4088-8410-0AAA9A7E7080}
+		{399BA23C-CD2D-4939-8B11-3ADB87E24016} = {D8FA177C-E61F-4742-ACD7-720C9D28A139}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D44F7794-A86F-4633-B1BD-67777A4FE52E}
